@@ -4,7 +4,6 @@ const articleRouter = require('./routes/articles');
 
 const app = express();
 
-console.log("testing mongoose start");
 mongoose.connect("mongodb+srv://golden_user:S3fvsQOxIjsUV90P@cluster0.jayp3uh.mongodb.net/blog", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -14,7 +13,6 @@ mongoose.connect("mongodb+srv://golden_user:S3fvsQOxIjsUV90P@cluster0.jayp3uh.mo
 
   })
   .catch(err => console.error('Error connecting to MongoDB:', err));
-console.log("testing mongoose end");
 
 app.set("view engine", "ejs");
 
